@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>𝑳𝒖𝒙𝒖𝒓𝒊𝒂 𝑪𝒍𝒐𝒕𝒉𝒊𝒏𝒈™🌹</title>
+        <style type="text/css">
+            html {
+                width: 100%;
+                height: 100vh;
+                overflow: auto;
+                box-sizing: border-box;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                outline: 0;
+                /* cursor: url(assets/guy.png), auto !important; */
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+			body {
+                background: #ffffff;
+                background-image: url('assets/coin.gif');
+                background-size: cover;
+                background-position: center;
+                display: inline-block;
+                width: 100%;
+                height: 100vh;
+             }
+
+             .coin {
+                 position: fixed;
+                 background-position: center;
+             }
+
+            .link {
+                position: fixed;
+                padding: 15px;
+                z-index: 5;
+            }
+            .link:hover img {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            }
+            .link.musica 
+            {
+                left: 0;
+                top: 0;
+            }
+
+            .link.shop {
+            right: 0;
+            top: 0;
+            }
+
+            .link.videos {
+            left: 0;
+            bottom: 0;
+            }
+
+            /* .link.tour {
+            right: 0;
+            bottom: 0;
+            } */
+
+            .link.logo {
+            right: calc(50% - 100px);
+            top: 10px;
+            }
+
+            .link img {
+                height: 50px;
+                -webkit-transition: 0.1s ease-in-out all;
+                -o-transition: 0.1s ease-in-out all;
+                transition: 0.1s ease-in-out all;
+            }
+
+            .link.am {
+            right: calc(50% - 85px);
+            bottom: 0px;
+            -webkit-transition: 0.7s bottom ease-in-out;
+            -o-transition: 0.7s bottom ease-in-out;
+            transition: 0.7s bottom ease-in-out;
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            }
+            
+            #three {
+                z-index: 9999;
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            @-webkit-keyframes tt {
+        from {
+            -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(2);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+        }
+    }
+
+            @keyframes tt {
+        from {
+            -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+        }
+
+        to {
+            -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+        }
+    }
+        .loading .link.am {
+        -webkit-animation: spin 1s infinite ease-out;
+        animation: spin 1s infinite ease-out;
+        bottom: 45%;
+    }   
+
+        .link.logo img {
+        height: 80px;
+        }
+
+        .link.am img
+        {
+        height: 100px;
+        }
+
+        .section {
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: 0.2s opacity;
+        -o-transition: 0.2s opacity;
+        transition: 0.2s opacity;
+        height: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+        .section.show {
+        opacity: 1;
+        pointer-events: auto;
+        overflow: auto;
+        position: relative;
+        height: auto;
+        z-index: 1
+    }
+            ::selection {
+            background: transparent;
+            }
+            
+            #ani {
+            display: inline-block;
+            position: fixed;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+        .cred {
+        position: fixed;
+        width: 100%;
+        bottom: 2px;
+        left: 0;
+        text-align: center;
+        font-size: 10px;
+        }
+
+        /* .radial-gradient {
+        -webkit-animation: tt 15s infinite;
+        animation: tt 15s infinite;
+        position: fixed;
+        z-index: 0;
+        pointer-events: none;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #000000;
+
+        background: repeating-radial-gradient(#e66465, #0015ff 20%);
+
+        background: -o-radial-gradient(at center, #0044ff, #ff0000);
+        background: radial-gradient(at center,  #0044ff, #ff0000);
+        } */
+
+
+        @media (max-width: 800px) {
+
+            .link {
+            padding: 10vh 20px;
+
+        }
+
+            .loading .link.am {
+            bottom: 45%;
+        }
+            .link img {
+            height: 15px;
+        }
+
+        .link.logo {
+            left: calc(50% - 39px);
+            top: -7px;
+        }
+
+        .link.am {
+            right: calc(50% - 40px);
+            bottom: -11px;
+        }
+
+        .link.logo img, .link.am img {
+            width: 50px;
+            height: auto;
+            margin: auto;
+        }
+
+            #ani {
+            margin-top: 0;
+            height: 45vh;
+        }
+
+        .cred {
+            bottom: 5vh;
+        }
+
+    }
+        
+		</style>
+	</head>
+	<body class="bloop">
+        
+        <div class="radial-gradient"></div>
+        <!-- <div id="ani"></div>
+        
+        <script type="module">
+        import * as THREE from './build/three.module.js';
+
+            import { OrbitControls } from './js/controls/OrbitControls.js';
+            import { GLTFLoader } from './js/loaders/GLTFLoader.js';
+
+            var container, controls, clock, mixers;
+            mixers = [];
+            var camera, scene, renderer;
+
+            init();
+            render();
+
+            function init() {
+
+                container = document.createElement( 'div' );
+                document.getElementById('ani').appendChild( container );
+
+                camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
+                camera.position.set( 3, 0, 2.7 );
+
+
+                scene = new THREE.Scene();
+                clock = new THREE.Clock();
+
+                var light = new THREE.AmbientLight(0xffffff , 0.7); // soft white light
+                scene.add( light );
+                var loader = new GLTFLoader().setPath( 'assets/' );
+                loader.load( 'scene.gltf', function ( gltf ) {
+                    gltf.scene.position.set(0, 0, 0)
+                    scene.add( gltf.scene );
+
+                    gltf.scene.traverse( child => {
+
+                        if ( child.material ) child.material.metalness = 0;
+
+                    } );
+                    $('body').removeClass(`loading`)
+                },
+                // called while loading is progressing
+                function ( xhr ) {
+                    let percent = xhr.loaded / xhr.total * 100;
+                    // $('body').css('background', `linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) ${percent}%, rgba(0,0,0,1) ${percent}%, rgba(0,0,0,1) 100%)`)
+                    // if(percent >= 100) $('body').css('background', '')
+                    console.log( ( percent ) + '% loaded' );
+
+                }, );
+
+
+                renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+                renderer.setClearColor( 0x000000, 0 );
+                renderer.setPixelRatio( window.devicePixelRatio );
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                renderer.toneMapping = THREE.ACESFilmicToneMapping;
+                renderer.toneMappingExposure = 0.8;
+                renderer.outputEncoding = THREE.sRGBEncoding;
+                container.appendChild( renderer.domElement );
+
+                var pmremGenerator = new THREE.PMREMGenerator( renderer );
+                pmremGenerator.compileEquirectangularShader();
+
+                controls = new OrbitControls( camera, renderer.domElement );
+                controls.minDistance = 10;
+                controls.maxDistance = 10;
+                controls.autoRotate = true;
+                controls.autoRotateSpeed = 3.5;
+                controls.rotateSpeed = 3;
+                controls.target.set( 0, 0, 0 );
+                controls.minPolarAngle = Math.PI/2;
+                controls.maxPolarAngle = Math.PI/2;
+                controls.update();
+                animate();
+
+                window.addEventListener( 'resize', onWindowResize, false );
+
+            }
+
+            function animate() {
+
+                requestAnimationFrame( animate );
+
+                // required if controls.enableDamping or controls.autoRotate are set to true
+                controls.update();
+
+                renderer.render( scene, camera );
+
+            }
+
+            function onWindowResize() {
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize( window.innerWidth, window.innerHeight );
+
+                render();
+
+            }
+
+            //
+
+            function render() {
+
+                renderer.render( scene, camera );
+
+            }
+
+
+        </script> -->
+
+        <!-- <video id="coin" width="640" height="360" preload controls>
+            <source src="assets/coin.mov" />
+            <source src="assets/coin.m4v" />
+            <source src="assets/coin.mp4" />
+        </video> -->
+                <a href="https://youtu.be/-R4c86GI7DM" class="link musica" target="_blank"><img src="assets/gallery.svg"></a>
+                <a href="https://www.asumadre.com" class="link shop" target="_blank"><img src="assets/shop.svg"></a>
+                <a href="https://www.youtube.com/c/AsuMadreTV/videos" class="link videos"><img src="assets/videos.svg"></a>
+                <!-- <a href="https://umusic.digital/balvincolores/" class="link tour"><img src="assets/game.svg"></a> -->
+                <a href="#" class="link logo"><img src="assets/logowhite.png"></a>
+                <!-- <a href="#" class="link am"><img src="assets/am.png"></a> -->
+                <!-- <div class="cred">Asu Madre!</div> -->
+	</body>
+</html>

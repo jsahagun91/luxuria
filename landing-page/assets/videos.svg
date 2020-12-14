@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="49" viewBox="0 0 300 49">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Times New Roman";
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text id="VIDEOS" class="cls-1" x="147.477" y="41.019"><tspan x="147.477">VIDEOS</tspan></text>
+  <text id="Lorem_Ipsum" data-name="Lorem Ipsum" class="cls-1" x="474.051" y="69.375"><tspan x="474.051">Lorem Ipsum</tspan></text>
+</svg>

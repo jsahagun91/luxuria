@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 // var port_number = server.listen(process.env.PORT || 3000);
 
 // Setting up the public directory

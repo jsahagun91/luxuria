@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "npm start": "npm start",
-    "build": "npm run build"
+    "npm start": "npm start"
   },
   "author": "jose sahagun",
   "license": "ISC",

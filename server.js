@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-var port_number = server.listen(process.env.PORT || 3000);
+// var port_number = server.listen(process.env.PORT || 3000);
 
 // Setting up the public directory
 
@@ -23,4 +23,4 @@ app.get('/contact', (req, res) => {
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
 
-app.listen(port_number);
+// app.listen(port_number);
